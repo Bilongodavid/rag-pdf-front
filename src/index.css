@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light dark;
+  --background: oklch(0.98 0.002 250);
+  --foreground: oklch(0.145 0 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: oklch(0.145 0.01 250);
+    --foreground: oklch(0.98 0.002 250);
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
